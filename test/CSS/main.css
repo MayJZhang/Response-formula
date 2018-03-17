@@ -1,0 +1,203 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+#intro {
+  padding: 8em 4em 3em 4em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: opacity 1s ease;
+  transition-duration: 1s;
+  cursor: default;
+  text-align: center;
+}
+#intro h1 {
+  /* color: #ffffff; */
+  text-align: center;
+  font-size: 5rem;
+}
+#intro p {
+  margin: 1rem 0 2rem 0;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+#intro a {
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  font-size: 1.5em;
+  line-height: 2em;
+  text-align: center;
+  color: #ffffff;
+  transition-duration: 0.4s;
+}
+#intro a:hover {
+  color: #18bfef;
+  border: 2px solid #18bfef;
+}
+
+body header nav ul li a {
+  display: block;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  line-height: 2em;
+  color: seashell;
+  font-family: "微软雅黑";
+  font-size: large;
+}
+/* 大于等于320px */
+@media only screen and (min-width: 20em) {
+  html {
+    font-size: 11px;
+  }
+}
+/* 大于等于480px */
+@media only screen and (min-width: 30em) {
+  html {
+    font-size: 14px;
+  }
+}
+/* 大于等于480px小于等于767px */
+@media only screen and (min-width: 30em) and (max-width: 48.9375em) {
+}
+/* 大于等于768px */
+@media only screen and (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* 大于等于960px */
+@media only screen and (min-width: 60em) {
+  body nav {
+    margin: 0 auto;
+    width: 80%;
+    height: 4em;
+    background-color: #00000023;
+  }
+  /* Link */
+  body nav .link,
+  body nav .link li {
+    height: 100%;
+    float: left;
+  }
+  body nav .link a {
+    padding: 0 1em;
+    display: block;
+    color: #ffffff;
+    font-family: "微软雅黑";
+    font-size: 1em;
+    line-height: 4em;
+    background-color: rgba(255, 255, 255, 0);
+    transition-duration: 0.4s;
+  }
+  body nav .link a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #18bfef;
+  }
+
+  /* Icon */
+  body nav .icon,
+  body nav .icon li {
+    height: 100%;
+    float: right;
+  }
+  body nav .icon a {
+    padding: 0 0.5em 0 0.5em;
+    display: block;
+    height: 2.6667em;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 2.6667em;
+    transition-duration: 0.4s;
+  }
+  body nav .icon a:hover {
+    color: #18bfef;
+  }
+
+  /* Main */
+  #main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  #main header {
+    padding: 5em 0;
+  }
+  #main header span {
+    display: block;
+    padding: 0 30em 3em 30em;
+  }
+  #main header span hr {
+    border: 1.5px solid #5f4f4f;
+  }
+  #main header h3 {
+    padding: 0 0 3em 0;
+  }
+  #main header h3 a {
+    display: inline;
+    padding: 0;
+    font-size: 1.5em;
+    transition-duration: 0.2s;
+  }
+  #main header a {
+    display: block;
+    padding: 0 10%;
+    color: #5f4f4f;
+  }
+  #main header a:hover {
+    color: #18bfef;
+  }
+}
+
+/* Article */
+#article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  text-align: center;
+  padding: 0;
+}
+#article section {
+  width: 50%;
+  height: 10em;
+  text-align: center;
+}
+
+/* 大于等于1280px */
+@media only screen and (min-width: 80em) {
+  html {
+    font-size: 18px;
+  }
+}
