@@ -74,25 +74,103 @@ body header nav ul li a {
   font-family: "微软雅黑";
   font-size: large;
 }
+
 /* 大于等于320px */
 @media only screen and (min-width: 20em) {
   html {
-    font-size: 11px;
+    font-size: 12px;
+  }
+  /* Nav */
+  #navPanelToggle {
+    display: block;
+    position: fixed;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.5em;
+    top: 1em;
+    right: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #5f4f4f;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  #navigation {
+    display: none;
+  }
+
+  /* Main */
+  #main {
+    padding: 0 5%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  #main header {
+    border-bottom: 2px solid #f4f4f4;
+  }
+  #main header span {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 0;
+    width: 25%;
+    font-size: 1em;
+  }
+  #main header span hr {
+    border: 1.5px solid #5f4f4f;
+  }
+  #main header h3 {
+    padding: 0 0 2em 0;
+  }
+  #main header h3 a {
+    display: inline;
+    padding: 0;
+    font-size: 1.5em;
+    transition-duration: 0.2s;
+  }
+  #main header a {
+    display: block;
+    color: #5f4f4f;
+    padding: 1em 0;
+  }
+  #main header a:hover {
+    color: #18bfef;
+  }
+  #main header ul {
+    padding: 1em 0 2em 0;
+  }
+  #main header li a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5f4f4f;
+    border: 2px solid #5f4f4f;
+    padding: 0.5em 0;
+    transition-duration: 0.4s;
+  }
+  #main header li a:hover {
+    color: #18bfef;
+    border: 2px solid #18bfef;
   }
 }
-/* 大于等于480px */
-@media only screen and (min-width: 30em) {
+
+/* 大于等于480px小于等于767px */
+@media only screen and (min-width: 30em) and (max-width: 48.9375em) {
   html {
     font-size: 14px;
   }
 }
-/* 大于等于480px小于等于767px */
-@media only screen and (min-width: 30em) and (max-width: 48.9375em) {
-}
+
 /* 大于等于768px */
 @media only screen and (min-width: 48em) {
   html {
     font-size: 16px;
+  }
+  #navPanelToggle {
+    display: none;
+  }
+  #navigation {
+    display: block;
   }
 }
 
@@ -148,16 +226,19 @@ body header nav ul li a {
   /* Main */
   #main {
     width: 80%;
+    padding: 0;
     margin: 0 auto;
     background-color: #ffffff;
     text-align: center;
   }
   #main header {
-    padding: 5em 0;
+    padding: 3em 0;
   }
   #main header span {
+    padding: 0 0 2em 0;
     display: block;
-    padding: 0 30em 3em 30em;
+    width: 15%;
+    margin: 0 auto;
   }
   #main header span hr {
     border: 1.5px solid #5f4f4f;
@@ -179,20 +260,39 @@ body header nav ul li a {
   #main header a:hover {
     color: #18bfef;
   }
-}
 
-/* Article */
-#article {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  text-align: center;
-  padding: 0;
-}
-#article section {
-  width: 50%;
-  height: 10em;
-  text-align: center;
+  #main header ul {
+    padding: 1em 0 2em 0;
+  }
+  #main header li a {
+    margin: 0 auto;
+    width: 20%;
+    border-radius: 3px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5f4f4f;
+    border: 2px solid #5f4f4f;
+    padding: 0.5em 0;
+    transition-duration: 0.4s;
+  }
+  #main header li a:hover {
+    color: #18bfef;
+    border: 2px solid #18bfef;
+  }
+
+  /* Article */
+  #article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    text-align: center;
+    padding: 0;
+  }
+  #article section {
+    width: 50%;
+    height: 10em;
+    text-align: center;
+  }
 }
 
 /* 大于等于1280px */
