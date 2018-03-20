@@ -18,16 +18,26 @@ function showinfo(){
     + "姓名：" + stuinfo.sname + "<br/>" + "性别：" + stuinfo.sex + "<br/>" + "爱好：" + stuinfo.hobby;
 }
 
+function getId(id){
+    return document.getElementById(id);
+}
+
 function logincheck(){
     var user = login.user.value;
     var password = login.password.value;
+    var userinfo = getId("userinfo");
+    var passinfo = getId("passinfo");
     if(user.length < 6){
-        alert("用户名不少于6位");
+        userinfo.innerHTML = "密码不能小于6位";
         return false;
+    }else{
+        userinfo.innerHTML = "*";
     }
     if(password.length < 8){
-        alert("密码不少于8位");
+        passinfo.innerText = "密码不少于8位";
         return false;
+    }else{
+        passinfo.innerHTML = "*";
     }
     return true;
 }

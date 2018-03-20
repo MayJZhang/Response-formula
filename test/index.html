@@ -5,9 +5,12 @@
     <meta charset="utf-8" />
     <title>OneG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <script src="JS/main.js"></script>
+    <link href="sass/navPanel.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -17,7 +20,7 @@
             <br/> 响应式网站
         </h1>
         <p>一个完全响应html 5+ css 3站点模板由@MayJZhang模仿@ajlkn设计</p>
-        <a href="#header">
+        <a href="#header" class="scrolly">
             <i class="fas fa-chevron-down"></i>
         </a>
     </div>
@@ -87,6 +90,7 @@
         </article>
     </main>
 
+    <div id="bg"></div>
     <a href="#navPanel" id="navPanelToggle">
         <i class="fas fa-align-justify"></i>
     </a>

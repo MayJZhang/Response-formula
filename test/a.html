@@ -16,9 +16,10 @@
     <h3 onclick="showinfo()">韩梅梅同学个人信息</h3>
     <p id="info"></p>
 
-    <form name="login" onfocus="logincheck();" onsubmit="return logincheck();">
-        <input name="user" width="20" /><br/>
-        <input name="password" width="20" />
+    <form name="login" onsubmit="return logincheck();">
+        <input name="user" width="20" /><span id="userinfo">*</span>
+        <br/>
+        <input name="password" width="20" /><span id="passinfo">*</span>
         <input type="submit" value="提交"/>
     </form>
 
