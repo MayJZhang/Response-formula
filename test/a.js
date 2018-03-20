@@ -17,3 +17,17 @@ function showinfo(){
     document.getElementById("info").innerHTML = "所在班级：" + stuinfo.class + "<br/>" + "学号：" + stuinfo.stuid + "<br/>"
     + "姓名：" + stuinfo.sname + "<br/>" + "性别：" + stuinfo.sex + "<br/>" + "爱好：" + stuinfo.hobby;
 }
+
+function logincheck(){
+    var user = login.user.value;
+    var password = login.password.value;
+    if(user.length < 6){
+        alert("用户名不少于6位");
+        return false;
+    }
+    if(password.length < 8){
+        alert("密码不少于8位");
+        return false;
+    }
+    return true;
+}
