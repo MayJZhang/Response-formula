@@ -1,8 +1,47 @@
-#navPanel{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 80%;
-    height: 100%;
-    background-color: white;
+#navPanel {
+  position: fixed;
+  visibility: hidden;
+  padding: 2em 2em;
+  top: 0;
+  right: -100%;
+  width: 65%;
+  height: 100%;
+  background-color: white;
+  transition-duration: 0.4s;
+}
+#navPanel .close {
+  position: absolute;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  color: #5f4f4f;
+  font-size: 1.5em;
+}
+#navPanel .links {
+  display: block;
+  margin-bottom: 2em;
+  li {
+    padding: 0 1em;
+    a {
+        display: block;
+        font-size: 1.5em;
+        padding: 1em 0.5em;
+         border-bottom: 2px solid #d8d2d2;
+         color: #5f4f4f;
+    }
+  }
+}
+#navPanel .icons{
+    padding: 0 1em;
+    li{
+        display: inline-block;
+        a{
+            padding: .5em;
+            margin-right: .5em;
+            color: #5f4f4f;
+            font-size: 1.25em;
+            border: 1.5px solid #5f4f4f;
+            border-radius: 50%;
+        }
+    }
 }
