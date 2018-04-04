@@ -23,7 +23,7 @@ img {
   max-width: 100%;
   width: 100%;
 }
-nav{
+nav {
   display: block;
 }
 
@@ -76,6 +76,16 @@ body header nav ul li a {
   color: seashell;
   font-family: "微软雅黑";
   font-size: large;
+}
+
+#article section {
+  border-top: 1.5px solid #18bfef;
+}
+
+#article section span {
+  font-size: 1.5em;
+  font-family: "微软雅黑";
+  color: #5f4f4f;
 }
 
 /* 大于等于320px */
@@ -169,7 +179,8 @@ body header nav ul li a {
   html {
     font-size: 16px;
   }
-  #navPanelToggle, #navPanel{
+  #navPanelToggle,
+  #navPanel {
     display: none;
   }
   #navigation {
@@ -292,7 +303,8 @@ body header nav ul li a {
     padding: 0;
   }
   #article section {
-    width: 50%;
+    padding: 0 5%;
+    width: 40%;
     height: 10em;
     text-align: center;
   }
